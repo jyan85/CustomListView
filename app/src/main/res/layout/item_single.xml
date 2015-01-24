@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/item_single">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_videothumb"
+        android:maxWidth="60dp"
+        android:maxHeight="40dp"
+        android:src="#ffff0013"
+        android:minHeight="80dp"
+        android:minWidth="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/item_username" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video Name"
+        android:id="@+id/item_videoname"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/item_videothumb"
+        android:layout_toEndOf="@+id/item_videothumb" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Video Description"
+        android:id="@+id/item_videodetail"
+        android:layout_below="@+id/item_videoname"
+        android:layout_toRightOf="@+id/item_videothumb"
+        android:layout_toEndOf="@+id/item_videothumb" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_userthumb"
+        android:minHeight="60dp"
+        android:minWidth="60dp"
+        android:maxWidth="60dp"
+        android:maxHeight="60dp"
+        android:longClickable="false"
+        android:background="#ff000aff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="User Name"
+        android:id="@+id/item_username"
+        android:layout_below="@+id/item_userthumb"
+        android:layout_alignLeft="@+id/item_userthumb"
+        android:layout_alignStart="@+id/item_userthumb" />
+
+</RelativeLayout>
